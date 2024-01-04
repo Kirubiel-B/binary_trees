@@ -1,9 +1,10 @@
 #include "binary_trees.h"
+
 /**
- * find_node -function find node in a tree
- * @root: root of the tre to evaluate
- * @node: node to find
- * Return: 1 if exits 0 if no
+ * find_node - find node in a tree
+ * @root: tre to evaluate
+ * @node: to find
+ * Return: 1 if exit 0 if no
  */
 int find_node(binary_tree_t *root, binary_tree_t *node)
 {
@@ -19,10 +20,10 @@ int find_node(binary_tree_t *root, binary_tree_t *node)
 	return (0);
 }
 /**
- * croos_tree - cross the tree checking if each node exist correctly
- * @root: root node of the tree
- * @node: current node to evaluate
- * Return: 1 if is BST0 if no
+ * croos_tree - checking if each node exist correctly
+ * @root: node of the tree
+ * @node: node to evaluate
+ * Return: 1 if BST0 if no
  */
 int croos_tree(binary_tree_t *root, binary_tree_t *node)
 {
@@ -40,9 +41,9 @@ int croos_tree(binary_tree_t *root, binary_tree_t *node)
 	return (0);
 }
 /**
- * binary_tree_is_bst - check if ist a correctly bst tree
- * @tree: tre to check
- * Return: 1 if is bst 0 if not
+ * binary_tree_is_bst - ist a correctly bst tree
+ * @tree: check
+ * Return: 1 if bst 0 if not
  */
 int binary_tree_is_bst(const binary_tree_t *tree)
 {

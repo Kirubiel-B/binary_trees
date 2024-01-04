@@ -1,9 +1,8 @@
 #include "binary_trees.h"
-
 /**
- * bal - Measures balance factor of a AVL
- * @tree: tree to go through
- * Return: balanced factor
+ * bal - balance factor of a AVL
+ * @tree: to go through
+ * Return: factor
  */
 void bal(avl_t **tree)
 {
@@ -22,9 +21,9 @@ void bal(avl_t **tree)
 		*tree = binary_tree_rotate_left((binary_tree_t *)*tree);
 }
 /**
- * successor - get the next successor i mean the min node in the right subtree
- * @node: tree to check
- * Return: the min value of this tree
+ * successor - next successor i mean the min node in the right subtree
+ * @node: check
+ * Return: min value of this tree
  */
 int successor(bst_t *node)
 {
@@ -46,9 +45,9 @@ int successor(bst_t *node)
 
 }
 /**
- *remove_type - function that removes a node depending of its children
- *@root: node to remove
- *Return: 0 if it has no children or other value if it has
+ *remove_type - removes a node depending of its children
+ *@root: remove
+ *Return: 0 if no children or other value if it has
  */
 int remove_type(bst_t *root)
 {
@@ -92,10 +91,10 @@ int remove_type(bst_t *root)
 	}
 }
 /**
- * bst_remove - remove a node from a BST tree
- * @root: root of the tree
- * @value: node with this value to remove
- * Return: the tree changed
+ * bst_remove - node from a BST tree
+ * @root: the tree
+ * @value: value to remove
+ * Return: tree changed
  */
 bst_t *bst_remove(bst_t *root, int value)
 {
@@ -117,12 +116,11 @@ bst_t *bst_remove(bst_t *root, int value)
 		return (NULL);
 	return (root);
 }
-
 /**
- * avl_remove - remove a node from a AVL tree
- * @root: root of the tree
- * @value: node with this value to remove
- * Return: the tree changed
+ * avl_remove - functio remove a node from a AVL tree
+ * @root: the tree
+ * @value: value to remove
+ * Return: tree changed
  */
 avl_t *avl_remove(avl_t *root, int value)
 {

@@ -1,13 +1,12 @@
 #include "binary_trees.h"
-
 /**
- * r_insert_node - node value insertion in an AVL tree.
- * @tree: double pointer to the root node of the AVL tree struct.
- * @parent: parent node of struct AVL.
- * @new: double pointer to left or right insertion.
- * @nval: insertion value of the AVL.
+ * r_insert_node - value insertion in an AVL tree.
+ * @tree: pointer to the root node of the AVL tree struct.
+ * @parent: node of struct AVL.
+ * @new: pointer to left or right insertion.
+ * @nval: value of the AVL.
  *
- * Return: pointer to the new root after insertion, otherwise NULL.
+ * Return: new root after insertion, otherwise NULL.
  */
 avl_t *r_insert_node(avl_t **tree, avl_t *parent, avl_t **new, int nval)
 {
@@ -52,13 +51,12 @@ avl_t *r_insert_node(avl_t **tree, avl_t *parent, avl_t **new, int nval)
 
 	return (*tree);
 }
-
 /**
- * avl_insert - inserts a value into an AVL tree.
- * @tree: double pointer to the root node of the AVL tree to insert into.
- * @value: value to store in the node to be inserted.
+ * avl_insert - value into an AVL tree.
+ * @tree: pointer to the root node of the AVL tree to insert into.
+ * @value: store in the node to be inserted.
  *
- * Return: pointer to the inserted node, or NULL if fails.
+ * Return: inserted node, or NULL if fails.
  */
 avl_t *avl_insert(avl_t **tree, int value)
 {
